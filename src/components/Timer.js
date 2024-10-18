@@ -1,7 +1,7 @@
 const Timer = (props) => {
   return (
     <div class="countdown">
-      <div class="days flex flex-col w-20 sm:w-32">
+      <div class="days flex flex-col w-20 sm:w-32 sm:transform-none">
         <div class="" style={{color: 'hsl(345, 95%, 68%)'}}>
           <div class="px-4 py-6">00</div>
           <div class="px-4 py-6">00</div>
