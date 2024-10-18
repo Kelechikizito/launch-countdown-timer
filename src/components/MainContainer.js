@@ -11,18 +11,18 @@ const MainContainer = () => {
             <h1 className="text-white" style={{letterSpacing: '6px'}}>WE'RE LAUNCHING SOON</h1>
         </div>
 
-        <div className="flex justify-between gap-8">
+        <div className="flex justify-between gap-4 sm:gap-8">
             <Timer title='Days'/>
             <Timer title='Hours'/>
             <Timer title='Minutes'/>
             <Timer title='Seconds'/>
         </div>
 
-        <div className="flex justify-center gap-8">
+        <footer className="flex justify-center gap-8 mt-32">
             <SocialMediaIcon imageSrc={FacebookIcon}/>
             <SocialMediaIcon imageSrc={PinterestIcon}/>
             <SocialMediaIcon imageSrc={InstagramIcon}/>
-        </div>
+        </footer>
     </div>
   )
 }

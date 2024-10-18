@@ -1,12 +1,12 @@
 const Timer = (props) => {
   return (
     <div class="countdown">
-      <div class="days flex flex-col w-20 sm:w-32 sm:transform-none">
-        <div class="" style={{color: 'hsl(345, 95%, 68%)'}}>
-          <div class="px-4 py-6">00</div>
-          <div class="px-4 py-6">00</div>
+      <div class="flex flex-col w-20 sm:w-32 sm:transform-none gap-4">
+        <div class="text-4xl sm:text-7xl" style={{color: 'hsl(345, 95%, 68%)', boxShadow: '0 4rem #191a24 inset'}}>
+          <div class="px-4 py-6 rounded-md" style={{backgroundColor: 'hsl(236, 21%, 26%)'}}>00</div>
+          <div class="px-4 py-6 rounded-md relative bottom-1/2" style={{backgroundColor: 'hsl(236, 21%, 26%)'}}>00</div>
         </div>
-        <p class="uppercase text-xs" style={{color: 'hsl(237, 18%, 59%)', letterSpacing: '4px'}}>{props.title}</p>
+        <p class="uppercase text-[8px] sm:text-xs" style={{color: 'hsl(237, 18%, 59%)', letterSpacing: '3px'}}>{props.title}</p>
       </div>
 
       {/* <div class="hours">
