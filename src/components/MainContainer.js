@@ -16,7 +16,7 @@ const MainContainer = () => {
 
     // Get the date 8 days from now
     const lastDate = new Date(today);
-    lastDate.setDate(today.getDate() + 8);
+    lastDate.setDate(today.getDate() + 9);
 
     // Countdown target date
     const countDownDate = lastDate.getTime();
