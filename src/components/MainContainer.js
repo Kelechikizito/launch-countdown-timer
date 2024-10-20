@@ -6,10 +6,10 @@ import PinterestIcon from "../assets/images/icon-pinterest.svg";
 import InstagramIcon from "../assets/images/icon-instagram.svg";
 
 const MainContainer = () => {
-  const [days, setDays] = useState(0);
-  const [hours, setHours] = useState(0);
-  const [minutes, setMinutes] = useState(0);
-  const [seconds, setSeconds] = useState(0);
+  const [days, setDays] = useState("00");
+  const [hours, setHours] = useState("00");
+  const [minutes, setMinutes] = useState("00");
+  const [seconds, setSeconds] = useState("00");
 
   useEffect(() => {
     const today = new Date(); // Get today's date
@@ -34,11 +34,11 @@ const MainContainer = () => {
       const calculatedMinutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
       const calculatedSeconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-      // Update state with calculated values
-      setDays(calculatedDays);
-      setHours(calculatedHours);
-      setMinutes(calculatedMinutes);
-      setSeconds(calculatedSeconds);
+      // Pad numbers with leading zeros if needed
+      setDays(String(calculatedDays).padStart(2, "0"));
+      setHours(String(calculatedHours).padStart(2, "0"));
+      setMinutes(String(calculatedMinutes).padStart(2, "0"));
+      setSeconds(String(calculatedSeconds).padStart(2, "0"));
 
       // Clear the interval when countdown is finished
       if (distance < 0) {
