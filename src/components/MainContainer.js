@@ -53,12 +53,12 @@ const MainContainer = () => {
   return (
     <div className="flex flex-col gap-14 z-40">
       <div>
-        <h1 className="text-white" style={{ letterSpacing: "6px" }}>
+        <h1 className="text-white tracking-[6px]">
           WE'RE LAUNCHING SOON
         </h1>
       </div>
 
-      <div className="flex justify-between gap-4 sm:gap-8">
+      <div className="flex justify-between gap-4 scale-[0.85] sm:transform-none sm:gap-8">
         <Timer title="Days" countDown={days} />
         <Timer title="Hours" countDown={hours} />
         <Timer title="Minutes" countDown={minutes} />
