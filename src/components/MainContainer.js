@@ -65,7 +65,7 @@ const MainContainer = () => {
         <Timer title="Seconds" countDown={seconds} />
       </div>
 
-      <div className="flex justify-center gap-8">
+      <div className="flex justify-center gap-8 pt-[25%]">
         <SocialMediaIcon imageSrc={FacebookIcon} />
         <SocialMediaIcon imageSrc={PinterestIcon} />
         <SocialMediaIcon imageSrc={InstagramIcon} />
